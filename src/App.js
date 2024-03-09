@@ -452,13 +452,13 @@ function App() {
       categories: ['AI'],
       galleryImages: ['./Reader_AI_1.png', './Reader_AI_2.png'],
     },
-    {
-      image: './Kepler_1.png',
-      title: 'Kepler AI',
-      category: 'AI Products',
-      categories: ['AI'],
-      galleryImages: ['./Kepler_1.png', './Kepler_2.png', './Kepler_3.png'],
-    },
+    // {
+    //   image: './Kepler_1.png',
+    //   title: 'Kepler AI',
+    //   category: 'AI Products',
+    //   categories: ['AI'],
+    //   galleryImages: ['./Kepler_1.png', './Kepler_2.png', './Kepler_3.png'],
+    // },
     {
       image: './Chinese_1.png',
       title: 'Restaurant Website',
