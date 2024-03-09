@@ -539,15 +539,6 @@ function App() {
                   </Link>
                 </div>
               </div>
-              <div className="col-6">
-                <div className="menu_button">
-                  <div className="menu_icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           {/* Sidenav Menu (Mobile view) */}
@@ -586,9 +577,9 @@ function App() {
         </section>
 
         <section id="deneb_service" className="deneb_service service_v1">
-      <div className="shape_v2">
+      {/* <div className="shape_v2">
         <img src='./shape_7.png' className="shape_7" alt="" />
-      </div>
+      </div> */}
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -607,7 +598,7 @@ function App() {
               <div className="info">
                 <h4><a href="#">AI Solutions</a></h4>
                 <p>Leveraging the power of Large Language Models (LLM) and OpenAI to create innovative AI products. Our offerings include chatbots, Q/A platforms, database and data analysis agents, and  much more, all designed to enhance your business operations and customer interactions. Trust us to deliver AI solutions that drive efficiency and provide actionable insights , this will help you scale your business.</p>
-                <a href="#" className="link_btn">Read More</a>
+                {/* <a href="#" className="link_btn">Read More</a> */}
               </div>
             </div>
           </div>
@@ -619,7 +610,7 @@ function App() {
               <div className="info">
                 <h4><a href="#">Cloud Services</a></h4>
                 <p>We offer comprehensive cloud solutions that cater to the evolving needs of modern businesses on different clouds like AWS , Google Cloud and Azure. Our data engineers excel in constructing robust data lakes across various cloud platforms, facilitating scalable and secure data storage solutions. We specialize in orchestrating end-to-end ETL processes to streamline your data flow.</p>
-                <a href="#" className="link_btn">Read More</a>
+                {/* <a href="#" className="link_btn">Read More</a> */}
               </div>
             </div>
           </div>
@@ -631,7 +622,7 @@ function App() {
               <div className="info">
                 <h4><a href="#">Web Design</a></h4>
                 <p>Specialized in creating bespoke websites that cater to a diverse range of industries, including restaurants, laundry delivery, real estate, and more. We are equipped with latest technologies to build visually appealing and user-friendly websites that drive engagement and business growth. Whether you need a simple landing page or a complex e-commerce platform, we deliver better than your expectations.</p>
-                <a href="#" className="link_btn">Read More</a>
+                {/* <a href="#" className="link_btn">Read More</a> */}
               </div>
             </div>
           </div>
@@ -643,7 +634,7 @@ function App() {
             <div className="info">
               <h4><a href="#">ML & Data Insights</a></h4>
               <p>At the heart of innovation, our Machine Learning and Data Science expertise empowers businesses to unlock predictive insights and make data-driven decisions. Our team excels in building sophisticated algorithms and data models tailored to industry-specific needs, from predictive maintenance in manufacturing to customer segmentation in retail and much more. </p>
-              <a href="#" className="link_btn">Read More</a>
+              {/* <a href="#" className="link_btn">Read More</a> */}
             </div>
           </div>
         </div>
@@ -1053,7 +1044,7 @@ function App() {
                  </div>
                  <div className="info">
                    <p><a href="tel:+918777061431">+91 9051-37-6351</a></p>
-                   <p><a href="tel:+918777061431">+91 8777-06-1431</a></p>
+                   <p><a href="tel:+918777061431">+91 9051-37-6351</a></p>
                  </div>
                </div>
                <div className="single_info">
@@ -1062,7 +1053,7 @@ function App() {
                  </div>
                  <div className="info">
                    <p><a href="mailto:liamelzer44@gmail.com">liamelzer44@gmail.com</a></p>
-                   <p><a href="mailto:sohamdev@gmail.com">ashutosh@gmail.com</a></p>
+                   <p><a href="mailto:sohamdev@gmail.com">lilybiso@gmail.com</a></p>
                  </div>
                </div>
                <div className="single_info">
@@ -1070,7 +1061,7 @@ function App() {
                    <FontAwesomeIcon icon={faMapMarkerAlt} />
                  </div>
                  <div className="info">
-                   <p>Gurgaon, New Delhi, India</p>
+                   <p>Patuli, Kolkata , India</p>
                  </div>
                </div>
              </div>
