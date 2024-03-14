@@ -95,12 +95,12 @@ function App() {
       category: 'Cloud Solutions',
       categories: ['DATA'],
     },
-    // {
-    //   image: './AWS_8.png',
-    //   title: 'Scalable AWS Image Processing Pipeline for Machine Learning Deployment',
-    //   category: 'Cloud Solutions',
-    //   categories: ['DATA'],
-    // },
+    {
+      image: './AWS_8.png',
+      title: 'AWS Data Processing and Workflow Automation Architecture',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
     {
       image: './AWS_9.png',
       title: 'Scalable Cloud-Based File Processing and Analytics Workflow',
@@ -173,12 +173,12 @@ function App() {
       category: 'Cloud Solutions',
       categories: ['DATA'],
     },
-    // {
-    //   image: './AWS_21.jpg',
-    //   title: 'Automated Machine Learning Workflow with CI/CD and Data Ingestion on AWS',
-    //   category: 'Cloud Solutions',
-    //   categories: ['DATA'],
-    // },
+    {
+      image: './AWS_21.png',
+      title: 'Multi-Account AWS Deployment Pipeline',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
     {
       image: './AWS_22.png',
       title: 'Scalable AWS Data Lake for Enterprise Analytics and Business Intelligence on AWS',
@@ -210,8 +210,8 @@ function App() {
       categories: ['DATA'],
     },
     {
-      image: './Azure_8.JPG',
-      title: 'End-to-End Data Intelligence and Machine Learning Operations on Azure',
+      image: './Azure_8.png',
+      title: 'Video Data Processing and Visualization Pipeline on Azure',
       category: 'Cloud Solutions',
       categories: ['DATA'],
     },
