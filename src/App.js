@@ -36,7 +36,7 @@ const ProjectGallery = ({ content = [] }) => {
   );
 };
 function App() {
-  const [filter, setFilter] = useState('*');
+  const [filter, setFilter] = useState('.AI');
   const [activeSection, setActiveSection] = useState('deneb_banner'); // New state variable for active section
   const [showGallery, setShowGallery] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -79,11 +79,148 @@ function App() {
      { name: 'AI Products', filter: '.AI' },
      { name: 'Web Development', filter: '.WEB' },
      { name: 'Cloud Solutions', filter: '.DATA' },
-     { name: 'ML & DS Solutions', filter: '.MLDS' },
      { name: 'Mobile App', filter: '.APP' },
    ];
   
    const projects = [
+    {
+      image: './AWS_6.png',
+      title: 'API Security and Traffic Management on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_7.png',
+      title: 'AWS-Integrated Rover Surveillance with Real-Time Video Analysis and IoT Control',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    // {
+    //   image: './AWS_8.png',
+    //   title: 'Scalable AWS Image Processing Pipeline for Machine Learning Deployment',
+    //   category: 'Cloud Solutions',
+    //   categories: ['DATA'],
+    // },
+    {
+      image: './AWS_9.png',
+      title: 'Scalable Cloud-Based File Processing and Analytics Workflow',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_10.png',
+      title: 'Multilingual Text Analysis and Classification Pipeline Using AWS SageMaker',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_11.jpg',
+      title: 'Automated Order Processing and Validation Workflow with AWS AI Services',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_12.png',
+      title: 'Real-Time Sports Analytics and Broadcasting Integration Platform On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_13.png',
+      title: 'Autonomous Vehicle Data Processing and Analytics Pipeline on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_14.png',
+      title: 'Enterprise Data Analytics and Business Intelligence on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_15.png',
+      title: 'Real-Time User Engagement and Marketing Automation On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_16.png',
+      title: 'Cloud-Based Text Processing and Analysis Pipeline with Real-Time Dashboarding On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_17.png',
+      title: 'Integrated IoT Analytics Pipeline for Real-time Monitoring and Anomaly Detection On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_18.png',
+      title: 'Cloud-Enabled Medical Imaging and Machine Learning Pipeline on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_19.png',
+      title: 'Advanced Customer Service Interaction and Data Management Platform on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_20.png',
+      title: 'Cloud-Native Image Processing and Inference Service on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    // {
+    //   image: './AWS_21.jpg',
+    //   title: 'Automated Machine Learning Workflow with CI/CD and Data Ingestion on AWS',
+    //   category: 'Cloud Solutions',
+    //   categories: ['DATA'],
+    // },
+    {
+      image: './AWS_22.png',
+      title: 'Scalable AWS Data Lake for Enterprise Analytics and Business Intelligence on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './AWS_23.webp',
+      title: 'Sentiment Analysis Pipeline for Customer Reviews Using AWS and Apache Airflow',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './Azure_5.png',
+      title: 'Hybrid Cloud Data Analytics and Machine Learning Operations on Azure',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './Azure_6.webp',
+      title: 'Scalable Image Analysis Service Using TensorFlow on Azure with KubeFlow Orchestration',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './Azure_7.png',
+      title: 'Real-Time Anomaly Detection in Time Series Data with Azure Analytics and Machine Learning',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './Azure_8.JPG',
+      title: 'End-to-End Data Intelligence and Machine Learning Operations on Azure',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: './Azure_9.png',
+      title: 'AWS Data Lake and Analytics Pipeline for Real-Time Insights and Machine Learning',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
     {
       title: 'Data Analytics on Azure',
       category: 'Cloud Solutions',
@@ -230,87 +367,87 @@ function App() {
           // ...other content types if necessary
         ],
       },
-      {
-        title: 'Marketing Analytics on Google Cloud',
-        category: 'Cloud Solutions',
-        categories: ['DATA'],
-        image: './GCP_1.jpeg',
-        content: [
-          {
-            type: 'text',
-            title: 'Scalable & Efficient Digital Marketing Analytics Platform on GCP',
-            description: `
-              <p>In this project, we designed and implemented a comprehensive digital marketing analytics platform leveraging various services provided by Google Cloud Platform (GCP). The primary objective was to build a scalable and efficient solution that could ingest and process data from multiple sources, perform advanced analytics, and deliver actionable insights to publishers and advertisers.</p>
+      // {
+      //   title: 'Marketing Analytics on Google Cloud',
+      //   category: 'Cloud Solutions',
+      //   categories: ['DATA'],
+      //   image: './GCP_1.jpeg',
+      //   content: [
+      //     {
+      //       type: 'text',
+      //       title: 'Scalable & Efficient Digital Marketing Analytics Platform on GCP',
+      //       description: `
+      //         <p>In this project, we designed and implemented a comprehensive digital marketing analytics platform leveraging various services provided by Google Cloud Platform (GCP). The primary objective was to build a scalable and efficient solution that could ingest and process data from multiple sources, perform advanced analytics, and deliver actionable insights to publishers and advertisers.</p>
               
-              <h3>Ingestion Layer:</h3>
-              <ul>
-                <li><strong>Cloud Dataflow:</strong> Utilized for ingesting and processing data streams in real-time from various sources, such as web applications, mobile apps, and advertising platforms.</li>
-                <li><strong>Cloud Pub/Sub:</strong> Employed for reliable and scalable data ingestion, acting as a buffer between data sources and downstream processing components.</li>
-                <li><strong>Cloud Dataproc:</strong> Used for batch processing of large datasets from sources like DoubleClick and third-party clusters.</li>
-              </ul>
+      //         <h3>Ingestion Layer:</h3>
+      //         <ul>
+      //           <li><strong>Cloud Dataflow:</strong> Utilized for ingesting and processing data streams in real-time from various sources, such as web applications, mobile apps, and advertising platforms.</li>
+      //           <li><strong>Cloud Pub/Sub:</strong> Employed for reliable and scalable data ingestion, acting as a buffer between data sources and downstream processing components.</li>
+      //           <li><strong>Cloud Dataproc:</strong> Used for batch processing of large datasets from sources like DoubleClick and third-party clusters.</li>
+      //         </ul>
               
-              <h3>Processing and Analysis Layer:</h3>
-              <ul>
-                <li><strong>Cloud Dataproc:</strong> Leveraged for real-time data processing and analysis using Apache Spark.</li>
-                <li><strong>BigQuery:</strong> Utilized for querying and analyzing large datasets efficiently.</li>
-                <li><strong>Compute Engine:</strong> Employed for running custom data processing workloads and batch jobs.</li>
-              </ul>
+      //         <h3>Processing and Analysis Layer:</h3>
+      //         <ul>
+      //           <li><strong>Cloud Dataproc:</strong> Leveraged for real-time data processing and analysis using Apache Spark.</li>
+      //           <li><strong>BigQuery:</strong> Utilized for querying and analyzing large datasets efficiently.</li>
+      //           <li><strong>Compute Engine:</strong> Employed for running custom data processing workloads and batch jobs.</li>
+      //         </ul>
               
-              <h3>Storage Layer:</h3>
-              <ul>
-                <li><strong>Cloud Storage:</strong> Utilized for storing production data, archival data, and intermediate data processed by various components.</li>
-                <li><strong>Cloud Bigtable:</strong> Employed for storing and serving large analytical and operational datasets.</li>
-              </ul>
-              <h3>Presentation Layer:</h3>
-              <ul>
-                <li><strong>App Engine:</strong> Utilized for hosting web applications, content management systems (CMS), and e-commerce platforms, enabling seamless integration with the analytics platform.</li>
-              </ul>
+      //         <h3>Storage Layer:</h3>
+      //         <ul>
+      //           <li><strong>Cloud Storage:</strong> Utilized for storing production data, archival data, and intermediate data processed by various components.</li>
+      //           <li><strong>Cloud Bigtable:</strong> Employed for storing and serving large analytical and operational datasets.</li>
+      //         </ul>
+      //         <h3>Presentation Layer:</h3>
+      //         <ul>
+      //           <li><strong>App Engine:</strong> Utilized for hosting web applications, content management systems (CMS), and e-commerce platforms, enabling seamless integration with the analytics platform.</li>
+      //         </ul>
           
-              <p>Throughout the project, we followed best practices for data governance, security, and compliance. Robust data encryption mechanisms were employed to protect sensitive information at rest and in transit. Access controls and audit trails were implemented to ensure data privacy and regulatory compliance.</p>
+      //         <p>Throughout the project, we followed best practices for data governance, security, and compliance. Robust data encryption mechanisms were employed to protect sensitive information at rest and in transit. Access controls and audit trails were implemented to ensure data privacy and regulatory compliance.</p>
               
-              <p>The end result was a scalable, efficient, and integrated digital marketing analytics platform that empowered our clients to gain valuable insights into their marketing campaigns, user behavior, and audience engagement, enabling data-driven decision-making and optimizing their digital presence.</p>
-            `,
-          },
-          // Additional content sections if needed
-        ],
-      },
-      {
-        title: 'Data Integration on Google Cloud',
-        category: 'Cloud Solutions',
-        categories: ['DATA'],
-        image: './GCP_2.jpeg',
-        content: [
-          {
-            type: 'text',
-            title: 'Centralized Data Platform for Streamlined Analytics',
-            description: `
-              <p>In this project, we developed a robust data integration and analytics platform to streamline data flow from various sources into a centralized data warehouse for efficient analysis and reporting. The key components and functionalities are as follows:</p>
+      //         <p>The end result was a scalable, efficient, and integrated digital marketing analytics platform that empowered our clients to gain valuable insights into their marketing campaigns, user behavior, and audience engagement, enabling data-driven decision-making and optimizing their digital presence.</p>
+      //       `,
+      //     },
+      //     // Additional content sections if needed
+      //   ],
+      // },
+      // {
+      //   title: 'Data Integration on Google Cloud',
+      //   category: 'Cloud Solutions',
+      //   categories: ['DATA'],
+      //   image: './GCP_2.jpeg',
+      //   content: [
+      //     {
+      //       type: 'text',
+      //       title: 'Centralized Data Platform for Streamlined Analytics',
+      //       description: `
+      //         <p>In this project, we developed a robust data integration and analytics platform to streamline data flow from various sources into a centralized data warehouse for efficient analysis and reporting. The key components and functionalities are as follows:</p>
               
-              <h3>Data Lake:</h3>
-              <p>A centralized repository to store raw data from multiple sources, including Client SQL, Customer Data, Supplier Data, Investor Data, and NoSQL databases. This data lake serves as the single source of truth for all data assets within the organization.</p>
+      //         <h3>Data Lake:</h3>
+      //         <p>A centralized repository to store raw data from multiple sources, including Client SQL, Customer Data, Supplier Data, Investor Data, and NoSQL databases. This data lake serves as the single source of truth for all data assets within the organization.</p>
               
-              <h3>Extract, Transform, Load (ETL) Pipeline:</h3>
-              <p>We implemented an Airflow-based ETL pipeline to extract data from the data lake, perform necessary transformations (such as data cleansing, formatting, and enrichment), and load the processed data into the data warehouse.</p>
+      //         <h3>Extract, Transform, Load (ETL) Pipeline:</h3>
+      //         <p>We implemented an Airflow-based ETL pipeline to extract data from the data lake, perform necessary transformations (such as data cleansing, formatting, and enrichment), and load the processed data into the data warehouse.</p>
               
-              <h3>Data Warehouse:</h3>
-              <p>A scalable and optimized data warehouse solution was set up to store the transformed data in a structured format, enabling efficient querying and analysis.</p>
+      //         <h3>Data Warehouse:</h3>
+      //         <p>A scalable and optimized data warehouse solution was set up to store the transformed data in a structured format, enabling efficient querying and analysis.</p>
               
-              <h3>Data Analytics and Visualization:</h3>
-              <ul>
-                <li><strong>Google:</strong> Integrated for data exploration and querying.</li>
-                <li><strong>Metabase:</strong> Employed for building interactive visualizations and reports.</li>
-                <li><strong>Looker:</strong> Utilized for advanced data modeling and business intelligence capabilities.</li>
-              </ul>
+      //         <h3>Data Analytics and Visualization:</h3>
+      //         <ul>
+      //           <li><strong>Google:</strong> Integrated for data exploration and querying.</li>
+      //           <li><strong>Metabase:</strong> Employed for building interactive visualizations and reports.</li>
+      //           <li><strong>Looker:</strong> Utilized for advanced data modeling and business intelligence capabilities.</li>
+      //         </ul>
               
-              <h3>Mixpanel Integration:</h3>
-              <p>Mixpanel, a leading product analytics platform, was integrated to capture and analyze user interactions and behaviors within the organization's applications or websites.</p>
+      //         <h3>Mixpanel Integration:</h3>
+      //         <p>Mixpanel, a leading product analytics platform, was integrated to capture and analyze user interactions and behaviors within the organization's applications or websites.</p>
               
-              <p>The primary objectives of this project were to establish a centralized data platform, streamline data ingestion from disparate sources, enable efficient data transformation and loading processes, and provide powerful analytical capabilities for data-driven decision-making. By consolidating data assets and empowering users with self-service analytics tools, we aimed to drive better insights, optimize operations, and foster a data-driven culture within the organization.</p>
-            `,
-          },
-          // Additional content sections if needed
-        ],
-      },
+      //         <p>The primary objectives of this project were to establish a centralized data platform, streamline data ingestion from disparate sources, enable efficient data transformation and loading processes, and provide powerful analytical capabilities for data-driven decision-making. By consolidating data assets and empowering users with self-service analytics tools, we aimed to drive better insights, optimize operations, and foster a data-driven culture within the organization.</p>
+      //       `,
+      //     },
+      //     // Additional content sections if needed
+      //   ],
+      // },
 
       {
         title: 'SDLF Implementation on AWS',
@@ -425,8 +562,8 @@ function App() {
       ,
       {
         title: 'Churn Prediction and Retention Analysis',
-        category: 'ML & DS Solutions',
-        categories: ['MLDS'],
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
         image: './AWS_5.png',
         content: [
           {
@@ -446,51 +583,186 @@ function App() {
       }
       ,
     {
-      image: './Reader_AI_1.png',
+      image: './reader_0.jpg',
       title: 'Reader AI',
       category: 'AI Products',
       categories: ['AI'],
-      galleryImages: ['./Reader_AI_1.png', './Reader_AI_2.png'],
+      // galleryImages: ['./Reader_AI_1.png', './Reader_AI_2.png'],
     },
-    // {
-    //   image: './Kepler_1.png',
-    //   title: 'Kepler AI',
-    //   category: 'AI Products',
-    //   categories: ['AI'],
-    //   galleryImages: ['./Kepler_1.png', './Kepler_2.png', './Kepler_3.png'],
-    // },
     {
-      image: './Chinese_1.png',
-      title: 'Restaurant Website',
+      image: './Kepler_0.jpg',
+      title: 'Kepler AI',
+      category: 'AI Products',
+      categories: ['AI'],
+      // galleryImages: ['./Kepler_1.png', './Kepler_2.png', './Kepler_3.png'],
+    },
+    {
+      image: './jarvis_0.jpg',
+      title: 'Jarvis AI',
+      category: 'AI Products',
+      categories: ['AI'],
+      galleryImages: ['./jarvis_1.png'],
+    },
+    {
+      image: './Chinese_0.jpg',
+      title: 'Szechuan Spot',
       category: 'Web Development',
       categories: ['WEB'],
       galleryImages: ['./Chinese_1.png', './Chinese_2.png', './Chinese_3.png', './Chinese_4.png', './Chinese_5.png', './Chinese_6.png', './Chinese_7.png', './Chinese_8.png'],
     },
     {
-      image: './Laundry_22.jpeg', // Add a new image for the new project
-      title: 'Laundry Website',
+      image: './Laundry_0.jpg', // Add a new image for the new project
+      title: 'Chelsea Cleaners',
       category: 'Web Development',
       categories: ['WEB'],
       galleryImages: ['./Laundry_22.jpeg','./Laundry_1.jpeg', './Laundry_2.jpeg', './Laundry_3.jpeg', './Laundry_4.jpeg', './Laundry_5.jpeg', './Laundry_6.jpeg', './Laundry_7.jpeg', './Laundry_8.jpeg', './Laundry_9.jpeg', './Laundry_10.jpeg', './Laundry_11.jpeg', './Laundry_12.jpeg', './Laundry_13.jpeg', './Laundry_14.jpeg', './Laundry_15.jpeg', './Laundry_16.jpeg', './Laundry_17.jpeg', './Laundry_18.jpeg', './Laundry_19.jpeg', './Laundry_20.jpeg', './Laundry_21.jpeg'],
     },
     {
-      image: './Admin_1.png', // Add a new image for the new project
-      title: 'Admin Dashboard',
+      image: './Admin_0.jpg', // Add a new image for the new project
+      title: 'Laundry App Dashboard',
       category: 'Web Development',
       categories: ['WEB'],
       galleryImages: ['./Admin_1.png', './Admin_2.png', './Admin_3.png', './Admin_4.png', './Admin_5.png', './Admin_6.png', './Admin_7.png'],
     },
     {
-      image: './App_0.jpeg',
+      image: './attendence.jpg', // Add a new image for the new project
+      title: 'Attendence Dashboard',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './business.jpg', // Add a new image for the new project
+      title: 'Business Metric Dashboard',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './show.jpg', // Add a new image for the new project
+      title: 'Flix Finder',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './estate.jpg', // Add a new image for the new project
+      title: 'PropertyPilot Listings',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './wood.png', // Add a new image for the new project
+      title: 'FurFriend Finder',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './saloon.png', // Add a new image for the new project
+      title: 'Rosie Saloon & Spa',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './furnish.png', // Add a new image for the new project
+      title: 'PavePlank Interiors',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './sol.png', // Add a new image for the new project
+      title: 'CorpEdge Solutions',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './member.png', // Add a new image for the new project
+      title: 'MemberMax Plus',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './marketing.png', // Add a new image for the new project
+      title: 'Digital Marketing Mesh',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './pet.png', // Add a new image for the new project
+      title: 'Susane PetPantry',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './click.png', // Add a new image for the new project
+      title: 'Click & Earn',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './rui.png', // Add a new image for the new project
+      title: 'Rui Consulting',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './charity.png', // Add a new image for the new project
+      title: 'GiveGather Foundation',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './baby.png', // Add a new image for the new project
+      title: 'LittleJoy Emporium',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: './App_0.png',
       title: 'Laundry App',
       category: 'Mobile App',
       categories: ['APP'],
-      galleryImages: [
-        './App_02.jpeg',
-        './App_01.jpeg'
-      ],
+      // galleryImages: [
+      //   './App_02.jpeg',
+      //   './App_01.jpeg'
+      // ],
     },
+    {
+      image: './trademesh.png',
+      title: 'TradeMesh App',
+      category: 'Mobile App',
+      categories: ['APP'],
+      // galleryImages: [
+      //   './App_02.jpeg',
+      //   './App_01.jpeg'
+      // ],
+    },
+    {
+      image: './clinicare.png',
+      title: 'CliniCare App',
+      category: 'Mobile App',
+      categories: ['APP'],
+      // galleryImages: [
+      //   './App_02.jpeg',
+      //   './App_01.jpeg'
+      // ],
+    },
+    
   ];
+
+  const getSliderSettings = (projects) => {
+    const slidesToShow = Math.min(projects.length, 3);
+    return {
+      dots: true,
+      infinite: projects.length > 3,
+      speed: 500,
+      slidesToShow: slidesToShow,
+      slidesToScroll: slidesToShow,
+      // Additional settings...
+    };
+  };
+  
+  // Inside the App function, before return statement
+  const sliderSettings = getSliderSettings(projects.filter((project) =>
+    filter === '*' ? project : project.categories.some((category) => category.includes(filter.substring(1)))
+  ));
   return (
       <div className="App">
         <header className="header_area header_v1 transparent_header">
@@ -744,31 +1016,33 @@ function App() {
           </div>
         </div>
         <div className="row">
-          {projects
-            .filter((project) =>
-              filter === '*' ? project : project.categories.some((category) => category.includes(filter.substring(1)))
-            )
-            .map((project, index) => (
-              <div key={index} className={`col-md-4 single_project ${project.categories.join(' ')}`}>
-                <div className="grid_item">
-                  <div className="deneb_img">
-                    <img src={project.image} className="img-fluid" alt="" />
-                  </div>
-                  <div className="deneb_info">
-                    <h4>
-                    <a href="#" onClick={(e) => {
-                      e.preventDefault();
-                      setShowGallery(true);
-                      setSelectedProject(project.galleryImages ? { content: project.galleryImages.map(src => ({ type: 'image', src })) } : project);
-                    }}>
-                      {project.title}
-                    </a>
-                    </h4>
-                    <p>{project.category}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+        <Slider {...sliderSettings}>
+  {projects
+    .filter((project) =>
+      filter === '*' ? project : project.categories.some((category) => category.includes(filter.substring(1)))
+    )
+    .map((project, index) => (
+      <div key={index} className={`single_project ${project.categories.join(' ')}`}>
+        <div className="grid_item" style={{ marginRight: '10px' }}>
+          <div className="deneb_img">
+            <img src={project.image} className="img-fluid" alt="" />
+          </div>
+          <div className="deneb_info">
+            <h4>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                setShowGallery(true);
+                setSelectedProject(project.galleryImages ? { content: project.galleryImages.map(src => ({ type: 'image', src })) } : project);
+              }}>
+                {project.title}
+              </a>
+            </h4>
+            <p>{project.category}</p>
+          </div>
+        </div>
+      </div>
+    ))}
+</Slider>
         </div>
         {showGallery && (
         <div className="project-gallery-overlay">
