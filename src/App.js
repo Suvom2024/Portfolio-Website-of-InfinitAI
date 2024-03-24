@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './assets/css/bootstrap.min.css';
@@ -40,6 +40,16 @@ function App() {
   const [activeSection, setActiveSection] = useState('deneb_banner'); // New state variable for active section
   const [showGallery, setShowGallery] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const toggleMobileMenu = () => {
+    const mobileMenu = document.getElementById('mobile_menu');
+    mobileMenu.style.transform = mobileMenu.style.transform === 'translateX(0%)' ? 'translateX(-100%)' : 'translateX(0%)';
+  };
+
+  // Add event listeners
+  useEffect(() => {
+      document.querySelector('.menu_button').addEventListener('click', toggleMobileMenu);
+      document.querySelector('.close_btn').addEventListener('click', toggleMobileMenu);
+  }, []);
 
   const settings = {
     dots: true,
@@ -802,20 +812,49 @@ function App() {
           </div>
         </div>
         <div className="mobile_wrapper">
-          <div className="mobile_header">
-            <div className="row align-items-center">
-              <div className="col-6">
+    <div className="mobile_header">
+        <div className="row align-items-center">
+            <div className="col-6">
                 <div className="brand_logo">
-                  <Link to="/">
-                    <img src='/logo_1.png' className="img-fluid" alt="logo" />
-                  </Link>
+                    <Link to="/">
+                        <img src='/logo_1.png' className="img-fluid" alt="logo" />
+                    </Link>
                 </div>
-              </div>
             </div>
-          </div>
-          {/* Sidenav Menu (Mobile view) */}
-          {/* ... You can implement similar structure for mobile navigation ... */}
+            <div className="col-6 text-right">
+                <div className="menu_button">
+                    <div className="menu_icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div className="sidenav_menu" id="mobile_menu">
+    <div className="close_icon">
+        <button className="close_btn">&times;</button>
+    </div>
+    <ul className="sidebar-menu">
+        <li className={`menu-item ${activeSection === 'deneb_banner' ? 'active_link' : ''}`}>
+            <a onClick={() => { scrollToSection('deneb_banner'); toggleMobileMenu(); }}>Home</a>
+        </li>
+        <li className={`menu-item ${activeSection === 'deneb_about' ? 'active_link' : ''}`}>
+            <a onClick={() => { scrollToSection('deneb_about'); toggleMobileMenu(); }}>About Us</a>
+        </li>
+        <li className={`menu-item ${activeSection === 'deneb_service' ? 'active_link' : ''}`}>
+            <a onClick={() => { scrollToSection('deneb_service'); toggleMobileMenu(); }}>Services</a>
+        </li>
+        <li className={`menu-item ${activeSection === 'deneb_project' ? 'active_link' : ''}`}>
+            <a onClick={() => { scrollToSection('deneb_project'); toggleMobileMenu(); }}>Portfolio</a>
+        </li>
+        <li className={`menu-item ${activeSection === 'deneb_contact' ? 'active_link' : ''}`}>
+            <a onClick={() => { scrollToSection('deneb_contact'); toggleMobileMenu(); }}>Contact Us</a>
+        </li>
+    </ul>
+</div>
+</div>
       </div>
     </header>
 
